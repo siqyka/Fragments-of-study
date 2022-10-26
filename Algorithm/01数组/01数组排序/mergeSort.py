@@ -12,12 +12,13 @@ def mergesort(left, right):
     while l < len(left):
         arr.append(left[l])
         l += 1
-        
+
     while r < len(right):
         arr.append(right[r])
         r += 1
-        
+
     return arr
+
 
 def sortArray(nums):
     if len(nums) <= 1:
@@ -27,6 +28,7 @@ def sortArray(nums):
     left = sortArray(nums[0:n])
     right = sortArray(nums[n:])
     return mergesort(left, right)
+
 
 nums = [1, 8, 3, 7, 5, 2]
 print(sortArray(nums))

@@ -1,3 +1,4 @@
+# 冒泡排序
 def sortArray(nums):
     for i in range(len(nums)):
         for j in range(len(nums)-i-1):
